@@ -1,0 +1,2217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday, Fatima ♡</title>
+
+<!-- Cute handwritten + casual fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Dancing+Script:wght@400;500;600;700&family=Nunito:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff7f4;
+    color:#4c3035;
+    font-family:"Nunito",sans-serif;
+    overflow-x:hidden;
+}
+
+button{
+    font-family:inherit;
+}
+
+::selection{
+    background:#e59aa8;
+    color:white;
+}
+
+
+/* =====================================================
+   BACKGROUND
+===================================================== */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:9999;
+    opacity:.035;
+
+    background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+
+/* =====================================================
+   FLOATING HEARTS
+===================================================== */
+
+.bg-heart{
+    position:fixed;
+    pointer-events:none;
+    z-index:1;
+    opacity:.45;
+    animation:floatHeart 5s ease-in-out infinite;
+}
+
+.h1{
+    left:5%;
+    top:20%;
+    font-size:22px;
+}
+
+.h2{
+    right:7%;
+    top:30%;
+    font-size:18px;
+    animation-delay:1s;
+}
+
+.h3{
+    left:10%;
+    bottom:15%;
+    font-size:15px;
+    animation-delay:2s;
+}
+
+.h4{
+    right:10%;
+    bottom:20%;
+    font-size:25px;
+    animation-delay:3s;
+}
+
+@keyframes floatHeart{
+    0%,100%{
+        transform:translateY(0) rotate(-5deg);
+    }
+    50%{
+        transform:translateY(-18px) rotate(7deg);
+    }
+}
+
+
+/* =====================================================
+   CAKE INTRO
+===================================================== */
+
+#cakePage{
+    position:fixed;
+    inset:0;
+    z-index:5000;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+        radial-gradient(circle at 15% 15%,#ffdce3 0,transparent 28%),
+        radial-gradient(circle at 85% 80%,#f7d9cf 0,transparent 30%),
+        #fff7f4;
+
+    transition:.9s ease;
+}
+
+#cakePage.hidden{
+    opacity:0;
+    visibility:hidden;
+    pointer-events:none;
+}
+
+.cake-wrap{
+    width:min(92vw,560px);
+    text-align:center;
+    position:relative;
+}
+
+.intro-small{
+    font-size:12px;
+    letter-spacing:2px;
+    color:#b47b83;
+    margin-bottom:8px;
+}
+
+.intro-title{
+    font-family:"Dancing Script",cursive;
+    font-size:clamp(55px,13vw,88px);
+    line-height:.85;
+    font-weight:600;
+    color:#713e49;
+}
+
+.intro-title span{
+    display:block;
+    font-family:"Allura",cursive;
+    font-size:.7em;
+    color:#c76e7d;
+    margin-top:10px;
+}
+
+
+/* =====================================================
+   CAKE
+===================================================== */
+
+.cake-area{
+    height:330px;
+    position:relative;
+    margin-top:25px;
+}
+
+.cake{
+    position:absolute;
+    width:220px;
+    height:160px;
+    left:50%;
+    top:95px;
+    transform:translateX(-50%);
+}
+
+.cake-left,
+.cake-right{
+    position:absolute;
+    inset:0;
+    transition:transform 1s cubic-bezier(.2,.8,.2,1);
+    overflow:hidden;
+}
+
+.cake.cut .cake-left{
+    transform:translateX(-45px) rotate(-4deg);
+}
+
+.cake.cut .cake-right{
+    transform:translateX(45px) rotate(4deg);
+}
+
+
+/* LEFT SIDE */
+
+.cake-body{
+    position:absolute;
+    width:220px;
+    height:105px;
+    bottom:30px;
+    left:0;
+    background:#f1aaa9;
+    border-radius:14px 14px 22px 22px;
+    box-shadow:inset 0 -12px rgba(120,55,65,.08);
+}
+
+.cake-top{
+    position:absolute;
+    width:220px;
+    height:60px;
+    top:10px;
+    left:0;
+    background:#ffdcd6;
+    border-radius:50%;
+}
+
+.cream{
+    position:absolute;
+    width:220px;
+    height:27px;
+    left:0;
+    top:52px;
+    background:#fffdf9;
+    border-radius:50%;
+}
+
+.drip{
+    position:absolute;
+    width:19px;
+    height:34px;
+    top:61px;
+    background:#fffdf9;
+    border-radius:0 0 12px 12px;
+}
+
+.drip:nth-of-type(1){
+    left:35px;
+}
+
+.drip:nth-of-type(2){
+    left:82px;
+    height:28px;
+}
+
+.drip:nth-of-type(3){
+    left:130px;
+    height:40px;
+}
+
+.drip:nth-of-type(4){
+    left:175px;
+    height:25px;
+}
+
+
+/* RIGHT CAKE SIDE */
+
+.cake-right::before{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:105px;
+    bottom:30px;
+    left:0;
+    background:#ef9fa2;
+    border-radius:14px 14px 22px 22px;
+    box-shadow:inset 0 -12px rgba(120,55,65,.08);
+}
+
+.cake-right::after{
+    content:"";
+    position:absolute;
+    width:220px;
+    height:60px;
+    top:10px;
+    left:0;
+    background:#ffd2cf;
+    border-radius:50%;
+}
+
+
+/* PLATE */
+
+.cake-plate{
+    position:absolute;
+    width:275px;
+    height:25px;
+    left:50%;
+    bottom:10px;
+    transform:translateX(-50%);
+    background:#e7c4c3;
+    border-radius:50%;
+    box-shadow:0 10px 25px rgba(80,40,40,.12);
+}
+
+
+/* CANDLE */
+
+.candle{
+    position:absolute;
+    width:14px;
+    height:53px;
+    background:#d87887;
+    left:50%;
+    top:-35px;
+    transform:translateX(-50%);
+    border-radius:5px;
+    z-index:5;
+}
+
+.flame{
+    position:absolute;
+    width:17px;
+    height:25px;
+    background:#f4a05f;
+    border-radius:50% 50% 50% 0;
+    transform:rotate(-45deg);
+    left:-2px;
+    top:-25px;
+    animation:flicker .7s infinite alternate;
+}
+
+@keyframes flicker{
+    from{
+        transform:rotate(-45deg) scale(.9);
+    }
+    to{
+        transform:rotate(-42deg) scale(1.1);
+    }
+}
+
+
+/* SCISSORS */
+
+.scissors{
+    position:absolute;
+    z-index:20;
+    right:7%;
+    top:65px;
+
+    width:65px;
+    height:65px;
+
+    border:none;
+    border-radius:50%;
+
+    background:white;
+
+    font-size:31px;
+    cursor:pointer;
+
+    box-shadow:0 10px 25px rgba(100,50,60,.14);
+
+    transition:.3s;
+}
+
+.scissors:hover{
+    transform:scale(1.1) rotate(-10deg);
+}
+
+.scissors.cut{
+    animation:cutting 1s ease forwards;
+}
+
+@keyframes cutting{
+    0%{
+        transform:translate(0,0) rotate(0);
+    }
+    40%{
+        transform:translate(-100px,45px) rotate(-25deg);
+    }
+    70%{
+        transform:translate(-145px,75px) rotate(15deg);
+    }
+    100%{
+        transform:translate(-200px,100px) rotate(0);
+    }
+}
+
+.cut-text{
+    position:absolute;
+    bottom:0;
+    width:100%;
+
+    font-family:"Dancing Script",cursive;
+    font-size:23px;
+    color:#8c5661;
+}
+
+.cut-button{
+    display:none;
+    margin:12px auto 0;
+
+    border:none;
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    background:#713e49;
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+    font-weight:700;
+
+    box-shadow:0 8px 20px rgba(100,50,60,.15);
+}
+
+.cut-button.show{
+    display:block;
+    animation:fadeUp .6s ease;
+}
+
+
+/* =====================================================
+   MAIN WEBSITE
+===================================================== */
+
+#mainSite{
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 1s ease;
+    position:relative;
+    z-index:2;
+}
+
+#mainSite.active{
+    opacity:1;
+    pointer-events:auto;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+
+    position:relative;
+
+    background:
+        radial-gradient(circle at 20% 30%,#ffe5e9,transparent 25%),
+        radial-gradient(circle at 80% 70%,#fce3d9,transparent 28%);
+}
+
+.hero-inner{
+    max-width:900px;
+}
+
+.eyebrow{
+    font-size:11px;
+    letter-spacing:3px;
+    text-transform:uppercase;
+    color:#bd7a83;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-family:"Dancing Script",cursive;
+    font-size:clamp(68px,14vw,145px);
+    line-height:.75;
+    font-weight:600;
+    color:#683c45;
+}
+
+.hero h1 span{
+    display:block;
+
+    font-family:"Allura",cursive;
+
+    font-size:.62em;
+
+    color:#c66e7b;
+
+    margin-top:22px;
+}
+
+.hero-sub{
+    margin-top:38px;
+
+    font-family:"Dancing Script",cursive;
+    font-size:27px;
+
+    color:#85555d;
+}
+
+.scroll-note{
+    position:absolute;
+    bottom:28px;
+
+    font-size:10px;
+    letter-spacing:2px;
+
+    color:#b28c8d;
+
+    animation:bounce 1.8s infinite;
+}
+
+@keyframes bounce{
+    50%{
+        transform:translateY(7px);
+    }
+}
+
+
+/* =====================================================
+   PAGE BREAK
+===================================================== */
+
+.page-break{
+    height:150px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    position:relative;
+}
+
+.page-break::before{
+    content:"";
+    width:65%;
+    height:1px;
+    background:#edcfd0;
+}
+
+.page-break span{
+    position:absolute;
+
+    background:#fff7f4;
+
+    padding:0 18px;
+
+    font-family:"Dancing Script",cursive;
+    font-size:25px;
+
+    color:#c47b84;
+}
+
+
+/* =====================================================
+   GENERAL SECTIONS
+===================================================== */
+
+.section{
+    max-width:1050px;
+    margin:auto;
+
+    padding:110px 25px;
+}
+
+.section-label{
+    font-size:11px;
+    letter-spacing:2px;
+    color:#c27a84;
+
+    margin-bottom:8px;
+}
+
+.section-title{
+    font-family:"Dancing Script",cursive;
+
+    font-size:clamp(50px,8vw,80px);
+
+    line-height:.9;
+
+    font-weight:600;
+
+    color:#683c45;
+
+    margin-bottom:40px;
+}
+
+.section-title .tiny{
+    font-family:"Allura",cursive;
+    color:#ca7480;
+}
+
+
+/* =====================================================
+   MESSAGE
+===================================================== */
+
+.message-card{
+    background:#fff;
+
+    border-radius:35px;
+
+    padding:45px;
+
+    position:relative;
+
+    box-shadow:0 20px 50px rgba(100,55,60,.08);
+
+    transform:rotate(-.5deg);
+}
+
+.message-card::before{
+    content:"♡";
+
+    position:absolute;
+
+    right:25px;
+    top:18px;
+
+    font-size:35px;
+
+    color:#efb6bd;
+}
+
+.message-card p{
+    font-family:"Dancing Script",cursive;
+
+    font-size:28px;
+
+    line-height:1.5;
+
+    color:#5d3e42;
+}
+
+.signature{
+    margin-top:25px;
+
+    font-family:"Allura",cursive;
+
+    font-size:32px;
+
+    color:#bd6675;
+}
+
+
+/* =====================================================
+   PHOTO SECTION
+===================================================== */
+
+.photo-intro{
+    font-family:"Dancing Script",cursive;
+
+    font-size:24px;
+
+    color:#91656b;
+
+    margin-bottom:30px;
+}
+
+.photo-grid{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+    padding:10px;
+}
+
+.photo{
+    height:370px;
+
+    background:#fff;
+
+    padding:12px 12px 45px;
+
+    box-shadow:0 12px 30px rgba(80,45,50,.13);
+
+    position:relative;
+
+    overflow:visible;
+
+    transition:.35s;
+}
+
+.photo:nth-child(1){
+    transform:rotate(-3deg);
+}
+
+.photo:nth-child(2){
+    transform:rotate(3deg);
+}
+
+.photo:nth-child(3){
+    transform:rotate(2deg);
+}
+
+.photo:nth-child(4){
+    transform:rotate(-2deg);
+}
+
+.photo:hover{
+    transform:rotate(0) translateY(-8px) scale(1.02);
+    z-index:4;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+}
+
+.photo::after{
+    content:"♡";
+
+    position:absolute;
+
+    bottom:8px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:22px;
+
+    color:#d88791;
+}
+
+
+/* =====================================================
+   AFTER PHOTOS - PERSONAL PAGE
+===================================================== */
+
+.personal-page{
+    min-height:90vh;
+
+    padding:120px 25px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    position:relative;
+
+    background:
+        radial-gradient(circle at 20% 50%,#ffe0e5,transparent 28%),
+        radial-gradient(circle at 80% 50%,#f9ded5,transparent 28%);
+}
+
+.personal-inner{
+    max-width:850px;
+}
+
+.personal-small{
+    font-size:12px;
+    letter-spacing:3px;
+    color:#b97982;
+    margin-bottom:15px;
+}
+
+.personal-title{
+    font-family:"Dancing Script",cursive;
+
+    font-size:clamp(60px,10vw,105px);
+
+    line-height:.85;
+
+    color:#713e49;
+}
+
+.personal-title span{
+    display:block;
+
+    font-family:"Allura",cursive;
+
+    color:#ca7180;
+
+    font-size:.65em;
+
+    margin-top:15px;
+}
+
+.personal-text{
+    margin-top:35px;
+
+    font-family:"Dancing Script",cursive;
+
+    font-size:27px;
+
+    line-height:1.45;
+
+    color:#80565d;
+}
+
+.personal-heart{
+    margin-top:35px;
+
+    font-size:55px;
+
+    animation:heartBeat 1.3s infinite;
+}
+
+@keyframes heartBeat{
+    50%{
+        transform:scale(1.15);
+    }
+}
+
+
+/* =====================================================
+   SECRET BUTTONS
+===================================================== */
+
+.secret-buttons{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:22px;
+}
+
+.secret-btn{
+    border:none;
+
+    background:#fff;
+
+    border-radius:30px;
+
+    padding:35px 20px;
+
+    cursor:pointer;
+
+    color:#5d3c42;
+
+    box-shadow:0 12px 30px rgba(90,45,50,.08);
+
+    transition:.35s;
+
+    position:relative;
+}
+
+.secret-btn:nth-child(1){
+    transform:rotate(-2deg);
+}
+
+.secret-btn:nth-child(2){
+    transform:rotate(1deg);
+}
+
+.secret-btn:nth-child(3){
+    transform:rotate(-1deg);
+}
+
+.secret-btn:hover{
+    transform:translateY(-8px) rotate(0);
+}
+
+.secret-btn .emoji{
+    font-size:45px;
+
+    display:block;
+
+    margin-bottom:15px;
+}
+
+.secret-btn strong{
+    font-family:"Dancing Script",cursive;
+
+    font-size:27px;
+
+    font-weight:600;
+}
+
+
+/* =====================================================
+   LETTER
+===================================================== */
+
+.letter{
+    background:#fff1e9;
+
+    padding:55px;
+
+    border-radius:12px;
+
+    position:relative;
+
+    box-shadow:0 15px 40px rgba(100,55,55,.07);
+
+    transform:rotate(.5deg);
+}
+
+.letter::before{
+    content:"";
+
+    position:absolute;
+
+    inset:15px;
+
+    border:1px dashed #dba7a5;
+
+    pointer-events:none;
+}
+
+.letter p{
+    position:relative;
+
+    font-family:"Dancing Script",cursive;
+
+    font-size:27px;
+
+    line-height:1.6;
+}
+
+
+/* =====================================================
+   FINAL
+===================================================== */
+
+.final{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    background:
+        radial-gradient(circle at center,#ffe2e5,transparent 50%),
+        #fff7f4;
+}
+
+.final h2{
+    font-family:"Dancing Script",cursive;
+
+    font-size:clamp(65px,12vw,125px);
+
+    line-height:.8;
+
+    font-weight:600;
+
+    color:#6b3d47;
+}
+
+.final h2 span{
+    display:block;
+
+    font-family:"Allura",cursive;
+
+    font-size:.65em;
+
+    color:#c96d7b;
+
+    margin-top:18px;
+}
+
+.final p{
+    margin-top:35px;
+
+    font-family:"Dancing Script",cursive;
+
+    font-size:27px;
+
+    color:#93666c;
+}
+
+
+/* =====================================================
+   MODAL
+===================================================== */
+
+.modal{
+    position:fixed;
+    inset:0;
+
+    z-index:3000;
+
+    background:rgba(80,40,45,.35);
+
+    backdrop-filter:blur(10px);
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    padding:20px;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.4s;
+}
+
+.modal.open{
+    opacity:1;
+    visibility:visible;
+}
+
+.modal-box{
+    width:min(700px,100%);
+
+    max-height:90vh;
+
+    overflow:auto;
+
+    background:#fff9f7;
+
+    border-radius:30px;
+
+    padding:50px 35px;
+
+    text-align:center;
+
+    position:relative;
+
+    transform:translateY(20px) scale(.95);
+
+    transition:.4s;
+}
+
+.modal.open .modal-box{
+    transform:translateY(0) scale(1);
+}
+
+.close{
+    position:absolute;
+
+    right:18px;
+    top:18px;
+
+    border:none;
+
+    background:#f7dfe0;
+
+    width:40px;
+    height:40px;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    font-size:20px;
+}
+
+.modal-title{
+    font-family:"Dancing Script",cursive;
+
+    font-size:62px;
+
+    line-height:.9;
+
+    color:#713e49;
+
+    margin-bottom:25px;
+}
+
+.modal-text{
+    font-family:"Dancing Script",cursive;
+
+    font-size:27px;
+
+    line-height:1.5;
+
+    color:#69484d;
+}
+
+
+/* =====================================================
+   LOVE CARDS
+===================================================== */
+
+.love-cards{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin-top:30px;
+}
+
+.love-card{
+    min-height:140px;
+
+    border:none;
+
+    border-radius:22px;
+
+    background:#ffe9e5;
+
+    cursor:pointer;
+
+    padding:20px;
+
+    font-family:"Dancing Script",cursive;
+
+    font-size:24px;
+
+    color:#603d43;
+
+    transition:.3s;
+}
+
+.love-card:hover{
+    transform:rotate(-2deg) scale(1.02);
+}
+
+.love-card span{
+    display:block;
+
+    font-size:13px;
+
+    font-family:"Nunito",sans-serif;
+
+    letter-spacing:2px;
+
+    margin-bottom:8px;
+
+    color:#b56f78;
+}
+
+
+/* =====================================================
+   GIFT
+===================================================== */
+
+.gift{
+    font-size:115px;
+
+    cursor:pointer;
+
+    display:inline-block;
+
+    transition:.5s;
+}
+
+.gift:hover{
+    transform:scale(1.1) rotate(-5deg);
+}
+
+.gift-message{
+    display:none;
+
+    font-family:"Dancing Script",cursive;
+
+    font-size:29px;
+
+    line-height:1.4;
+
+    margin-top:20px;
+}
+
+.gift-message.show{
+    display:block;
+
+    animation:fadeUp .6s ease;
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+.confetti{
+    position:fixed;
+
+    top:-20px;
+
+    width:8px;
+    height:12px;
+
+    z-index:7000;
+
+    pointer-events:none;
+
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh) rotate(720deg);
+        opacity:0;
+    }
+}
+
+
+/* =====================================================
+   ANIMATION
+===================================================== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:650px){
+
+    .hero h1{
+        font-size:70px;
+    }
+
+    .section{
+        padding:80px 20px;
+    }
+
+    .message-card{
+        padding:30px 24px;
+    }
+
+    .message-card p{
+        font-size:25px;
+    }
+
+    .photo-grid{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .photo{
+        height:360px;
+    }
+
+    .secret-buttons{
+        grid-template-columns:1fr;
+    }
+
+    .letter{
+        padding:35px 25px;
+    }
+
+    .letter p{
+        font-size:24px;
+    }
+
+    .love-cards{
+        grid-template-columns:1fr;
+    }
+
+    .scissors{
+        right:0;
+    }
+
+    .cake{
+        transform:translateX(-50%) scale(.82);
+    }
+
+    .cake.cut .cake-left{
+        transform:translateX(-30px) rotate(-3deg);
+    }
+
+    .cake.cut .cake-right{
+        transform:translateX(30px) rotate(3deg);
+    }
+
+    .personal-page{
+        min-height:100vh;
+        padding:90px 20px;
+    }
+
+    .personal-title{
+        font-size:65px;
+    }
+
+    .personal-text{
+        font-size:24px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- FLOATING DECOR -->
+
+<div class="bg-heart h1">♡</div>
+<div class="bg-heart h2">✦</div>
+<div class="bg-heart h3">♡</div>
+<div class="bg-heart h4">✧</div>
+
+
+<!-- =====================================================
+     CAKE OPENING
+===================================================== -->
+
+<div id="cakePage">
+
+    <div class="cake-wrap">
+
+        <div class="intro-small">
+            Only Day I remember for
+        </div>
+
+        <h1 class="intro-title">
+
+            Happy Birthday
+
+            <span>فاطمہ ♡</span>
+
+        </h1>
+
+
+        <div class="cake-area">
+
+            <div class="cake" id="cake">
+
+
+                <!-- LEFT HALF -->
+
+                <div class="cake-left">
+
+                    <div class="cake-body"></div>
+
+                    <div class="cake-top"></div>
+
+                    <div class="cream"></div>
+
+                    <div class="drip"></div>
+                    <div class="drip"></div>
+                    <div class="drip"></div>
+                    <div class="drip"></div>
+
+                    <div class="candle">
+
+                        <div class="flame"></div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT HALF -->
+
+                <div class="cake-right"></div>
+
+
+                <div class="cake-plate"></div>
+
+            </div>
+
+
+            <button class="scissors" id="scissors">
+                ✂️
+            </button>
+
+
+            <div class="cut-text" id="cutText">
+                Cut the cake firsttt ✂️
+            </div>
+
+        </div>
+
+
+        <button class="cut-button" id="enterBtn">
+           Open Surprise
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     MAIN WEBSITE
+===================================================== -->
+
+<main id="mainSite">
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-inner">
+
+        <div class="eyebrow">
+            today is officially about you
+        </div>
+
+        <h1>
+
+            Happy Birthday,
+
+            Fatima
+
+            <span>فاطمہ</span>
+
+        </h1>
+
+        <p class="hero-sub">
+            mera bachhaa, meri jaan ♡
+        </p>
+
+    </div>
+
+    <div class="scroll-note">
+        ↓ Scroll Down for more..
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     MESSAGE
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-label">
+        listen miss birthday girl...
+    </div>
+
+    <h2 class="section-title">
+        This one's for you ♡
+    </h2>
+
+
+    <div class="message-card">
+
+        <p>
+
+            Happy Birthday to the most special person. 🥹❤️
+
+            <br><br>
+
+            I hope this year gives you countless reasons
+            to smile, random moments that make you laugh,
+            and all the happiness you deserve.
+
+            <br><br>
+
+            And yes...
+
+            today you're officially allowed to be
+            extra dramatic, extra cute and extra annoying.
+
+            😂
+
+            <br><br>
+
+            Basically, birthday hai tumhara...
+            toh aaj tumhari saari bakwaas maaf. 😭❤️
+
+        </p>
+
+
+        <div class="signature">
+
+            — someone who's very lucky to know you ♡
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="page-break">
+    <span>little memories ✿</span>
+</div>
+
+
+<!-- =====================================================
+     PHOTOS
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-label">
+        warning: cute girl ahead
+    </div>
+
+    <h2 class="section-title">
+        Some pictures I couldn't delete. 😭
+    </h2>
+
+    <p class="photo-intro">
+        okay okay... don't get angry, you look too cute in these. 🥰
+    </p>
+
+
+    <div class="photo-grid">
+
+
+        <div class="photo">
+            <img src="photo1.jpgimages.JPG" alt="Memory 1">
+        </div>
+
+
+        <div class="photo">
+            <img src="images/photo2.jpg.PNG" alt="Memory 2">
+        </div>
+
+
+        <div class="photo">
+            <img src="images/photo3.jpg.JPG" alt="Memory 3">
+        </div>
+
+
+        <div class="photo">
+            <img src="images/photo4.jpg.JPG" alt="Memory 4">
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROPER NEXT PAGE AFTER PHOTOS
+===================================================== -->
+
+<section class="personal-page">
+
+    <div class="personal-inner">
+
+        <div class="personal-small">
+            okay... pictures khatam nahi hui,
+            bas ek important baat hai
+        </div>
+
+
+        <h2 class="personal-title">
+
+            You know what?
+
+            <span>You're actually pretty special.</span>
+
+        </h2>
+
+
+        <p class="personal-text">
+
+            Out of all the people in the world,
+            somehow I got to know you.
+
+            <br><br>
+
+            And honestly...
+
+            that's one of those little things
+            I'm genuinely grateful for. 🥹
+
+            <br><br>
+
+            So haan, birthday girl...
+
+            you're stuck being special now. ♡
+
+        </p>
+
+
+        <div class="personal-heart">
+            💗
+        </div>
+
+    </div>
+
+</section>
+
+
+<div class="page-break">
+    <span>abhi aur hai... 👀</span>
+</div>
+
+
+<!-- =====================================================
+     SECRET SECTION
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-label">
+        don't scroll away yet
+    </div>
+
+    <h2 class="section-title">
+        I hid some things for you...
+    </h2>
+
+
+    <div class="secret-buttons">
+
+
+        <button class="secret-btn"
+                onclick="openModal('missModal')">
+
+            <span class="emoji">
+                💌
+            </span>
+
+            <strong>
+                Open when you miss me
+            </strong>
+
+        </button>
+
+
+        <button class="secret-btn"
+                onclick="openModal('loveModal')">
+
+            <span class="emoji">
+                🫶
+            </span>
+
+            <strong>
+                Things I like about you
+            </strong>
+
+        </button>
+
+
+        <button class="secret-btn"
+                onclick="openModal('giftModal')">
+
+            <span class="emoji">
+                🎁
+            </span>
+
+            <strong>
+                One last surprise
+            </strong>
+
+        </button>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LETTER
+===================================================== -->
+
+<section class="section">
+
+    <div class="section-label">
+        okay... serious moment
+    </div>
+
+    <h2 class="section-title">
+        A little letter for you.
+    </h2>
+
+
+    <div class="letter">
+
+        <p>
+
+            Dear Fatima,
+
+            <br><br>
+
+            I don't really know if a website can explain
+            how important someone is...
+
+            but I still wanted to make this little thing
+            just for you.
+
+            <br><br>
+
+            I hope you remember all the little things too.
+
+            The random conversations.
+
+            The stupid jokes.
+
+            The laughs.
+
+            The moments that didn't seem important
+            at the time but somehow became memories.
+
+            <br><br>
+
+            I hope this new year of your life brings you
+            peace, happiness, success and a whole lot
+            of reasons to smile.
+
+            <br><br>
+
+            Keep being the weird, cute,
+            dramatic person that you are.
+
+            😂❤️
+
+            <br><br>
+
+            And most importantly...
+
+            never forget that you deserve good things.
+
+            <br><br>
+
+            Happy Birthday, meri jaan. ♡
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     FINAL
+===================================================== -->
+
+<section class="final">
+
+    <div>
+
+        <div class="eyebrow">
+            okay birthday girl...
+        </div>
+
+
+        <h2>
+
+            Happy Birthday,
+
+            meri jaan.
+
+            <span>فاطمہ ♡</span>
+
+        </h2>
+
+
+        <p>
+            Ab jao... birthday enjoy karo. 😭❤️
+        </p>
+
+        <p style="font-family:'Allura',cursive;font-size:35px;margin-top:15px;">
+            You deserve the happiest day. ♡
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =====================================================
+     MISS MODAL
+===================================================== -->
+
+<div class="modal" id="missModal">
+
+    <div class="modal-box">
+
+        <button class="close"
+                onclick="closeModal('missModal')">
+            ×
+        </button>
+
+
+        <div class="modal-title">
+            For you 💌
+        </div>
+
+
+        <div class="modal-text">
+
+            If you're reading this because you miss me...
+
+            <br><br>
+
+            then first of all...
+
+            smile. 😭❤️
+
+            <br><br>
+
+            Somewhere, someone is probably thinking
+            about you too.
+
+            <br><br>
+
+            So don't be sad, bachhaa.
+
+            ♡
+
+            <br><br>
+
+            You can always come back here.
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     LOVE MODAL
+===================================================== -->
+
+<div class="modal" id="loveModal">
+
+    <div class="modal-box">
+
+        <button class="close"
+                onclick="closeModal('loveModal')">
+            ×
+        </button>
+
+
+        <div class="modal-title">
+            Little things ♡
+        </div>
+
+
+        <div class="modal-text">
+            Click them... 👀
+        </div>
+
+
+        <div class="love-cards">
+
+
+            <button class="love-card"
+                    onclick="this.innerHTML='<span>01</span>Your smile. Obviously. 🙄❤️'">
+
+                <span>01</span>
+                Click me
+
+            </button>
+
+
+            <button class="love-card"
+                    onclick="this.innerHTML='<span>02</span>The way you make normal moments fun.'">
+
+                <span>02</span>
+                Click me
+
+            </button>
+
+
+            <button class="love-card"
+                    onclick="this.innerHTML='<span>03</span>Your random little habits. 😭'">
+
+                <span>03</span>
+                Click me
+
+            </button>
+
+
+            <button class="love-card"
+                    onclick="this.innerHTML='<span>04</span>The way you are just... you.'">
+
+                <span>04</span>
+                Click me
+
+            </button>
+
+
+            <button class="love-card"
+                    onclick="this.innerHTML='<span>05</span>Your laugh. Definitely contagious.'">
+
+                <span>05</span>
+                Click me
+
+            </button>
+
+
+            <button class="love-card"
+                    onclick="this.innerHTML='<span>06</span>Basically everything. Happy now? 😂❤️'">
+
+                <span>06</span>
+                Click me
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     GIFT MODAL
+===================================================== -->
+
+<div class="modal" id="giftModal">
+
+    <div class="modal-box">
+
+        <button class="close"
+                onclick="closeModal('giftModal')">
+            ×
+        </button>
+
+
+        <div class="modal-title">
+            A tiny gift 🎁
+        </div>
+
+
+        <div class="gift"
+             id="gift"
+             onclick="openGift()">
+
+            🎁
+
+        </div>
+
+
+        <div class="modal-text">
+            Tap the gift...
+        </div>
+
+
+        <div class="gift-message"
+             id="giftMessage">
+
+            Surprise! 😂
+
+            <br><br>
+
+            You actually thought there was
+            a physical gift inside this website?
+
+            <br><br>
+
+            Nice try, birthday girl. 😭
+
+            <br><br>
+
+            Your actual gift is...
+
+            <br><br>
+
+            <strong>
+                another year of being
+                absolutely adorable. ❤️
+            </strong>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* =====================================================
+   CAKE
+===================================================== */
+
+const cakePage =
+    document.getElementById("cakePage");
+
+const mainSite =
+    document.getElementById("mainSite");
+
+const cake =
+    document.getElementById("cake");
+
+const scissors =
+    document.getElementById("scissors");
+
+const enterBtn =
+    document.getElementById("enterBtn");
+
+const cutText =
+    document.getElementById("cutText");
+
+
+let cakeCut = false;
+
+
+scissors.addEventListener("click",()=>{
+
+    if(cakeCut) return;
+
+    cakeCut = true;
+
+    cake.classList.add("cut");
+
+    scissors.classList.add("cut");
+
+    cutText.innerHTML =
+        "Okayyy cake cut! 🎂✨";
+
+    createConfetti(50);
+
+
+    setTimeout(()=>{
+
+        enterBtn.classList.add("show");
+
+    },700);
+
+});
+
+
+/* =====================================================
+   ENTER SITE
+===================================================== */
+
+enterBtn.addEventListener("click",()=>{
+
+    cakePage.classList.add("hidden");
+
+    setTimeout(()=>{
+
+        mainSite.classList.add("active");
+
+        window.scrollTo(0,0);
+
+    },500);
+
+    createConfetti(80);
+
+});
+
+
+/* =====================================================
+   MODALS
+===================================================== */
+
+function openModal(id){
+
+    document
+        .getElementById(id)
+        .classList.add("open");
+
+    document.body.style.overflow =
+        "hidden";
+}
+
+
+function closeModal(id){
+
+    document
+        .getElementById(id)
+        .classList.remove("open");
+
+    document.body.style.overflow =
+        "";
+}
+
+
+/* CLICK OUTSIDE */
+
+document
+    .querySelectorAll(".modal")
+    .forEach(modal=>{
+
+        modal.addEventListener("click",(e)=>{
+
+            if(e.target === modal){
+
+                modal.classList.remove("open");
+
+                document.body.style.overflow =
+                    "";
+
+            }
+
+        });
+
+    });
+
+
+/* =====================================================
+   GIFT
+===================================================== */
+
+function openGift(){
+
+    const gift =
+        document.getElementById("gift");
+
+    const message =
+        document.getElementById("giftMessage");
+
+
+    gift.style.transform =
+        "scale(0) rotate(180deg)";
+
+
+    setTimeout(()=>{
+
+        gift.style.display =
+            "none";
+
+        message.classList.add("show");
+
+        createConfetti(55);
+
+    },400);
+
+}
+
+
+/* =====================================================
+   CONFETTI
+===================================================== */
+
+function createConfetti(amount){
+
+    const colors = [
+        "#e68d9b",
+        "#f2b5bd",
+        "#d97887",
+        "#f3d0c7",
+        "#c77b85"
+    ];
+
+
+    for(let i=0;i<amount;i++){
+
+        const piece =
+            document.createElement("div");
+
+
+        piece.className =
+            "confetti";
+
+
+        piece.style.left =
+            Math.random()*100 + "vw";
+
+
+        piece.style.animationDuration =
+            (2 + Math.random()*3) + "s";
+
+
+        piece.style.transform =
+            `rotate(${Math.random()*360}deg)`;
+
+
+        piece.style.background =
+            colors[
+                Math.floor(
+                    Math.random()*colors.length
+                )
+            ];
+
+
+        document.body.appendChild(piece);
+
+
+        setTimeout(()=>{
+
+            piece.remove();
+
+        },5000);
+
+    }
+
+}
+
+
+/* =====================================================
+   ESC KEY
+===================================================== */
+
+document.addEventListener("keydown",(e)=>{
+
+    if(e.key === "Escape"){
+
+        document
+            .querySelectorAll(".modal")
+            .forEach(modal=>{
+
+                modal.classList.remove("open");
+
+            });
+
+        document.body.style.overflow =
+            "";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
